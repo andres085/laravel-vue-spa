@@ -72,7 +72,7 @@ class AddressController extends Controller
      */
     public function update(Request $request, Address $address)
     {
-        $address->fill($request->post()->save());
+        $address->fill($request->post())->save();
         return response()->json(['address' => $address]);
     }
 

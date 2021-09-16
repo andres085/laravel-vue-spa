@@ -1,9 +1,9 @@
 const Home = () => import('./components/Home.vue')
-const Contacto = () => import('./components/Contacto.vue')
+const Contact = () => import('./components/Contact.vue')
 
-const Mostrar = () => import('./components/address/Mostrar.vue')
-const Crear = () => import('./components/address/Crear.vue')
-const Editar = () => import('./components/address/Editar.vue')
+const Show = () => import('./components/address/Show.vue')
+const Create = () => import('./components/address/Create.vue')
+const Edit = () => import('./components/address/Edit.vue')
 
 export const routes = [
     {
@@ -12,9 +12,9 @@ export const routes = [
         component:Home
     },
     {
-        name: 'contacto',
-        path: '/contacto',
-        component:Contacto
+        name: 'contact',
+        path: '/contact',
+        component:Contact
     },
     {
         name: 'Home',
@@ -22,18 +22,18 @@ export const routes = [
         component:Home
     },
     {
-        name: 'mostrarAddresses',
+        name: 'showAddresses',
         path: '/addresses',
-        component:Mostrar
+        component:Show
     },
     {
-        name: 'crearAddresses',
-        path: '/crear',
-        component:Crear
+        name: 'createAddresses',
+        path: '/create',
+        component:Create
     },
     {
-        name: 'editarAddresses',
-        path: '/editar/:id',
-        component:Editar
+        name: 'editAddresses',
+        path: '/edit/:id',
+        component:Edit
     }
 ]
