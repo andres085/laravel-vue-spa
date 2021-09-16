@@ -4,6 +4,7 @@ const Contact = () => import('./components/Contact.vue')
 const Show = () => import('./components/address/Show.vue')
 const Create = () => import('./components/address/Create.vue')
 const Edit = () => import('./components/address/Edit.vue')
+const Map = () => import('./components/address/Map.vue')
 
 export const routes = [
     {

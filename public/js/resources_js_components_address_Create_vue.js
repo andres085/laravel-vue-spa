@@ -65,6 +65,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Create",
   data: function data() {
@@ -978,6 +984,17 @@ var render = function() {
             [
               _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-12 mb-2" }, [
+                  _c(
+                    "div",
+                    [
+                      _c("gmap-map", {
+                        staticStyle: { width: "100%", height: "320px" },
+                        attrs: { center: { lat: 10, lng: 10 }, zoom: 7 }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Dirección")
